@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Justine Guia — IT student and aspiring web developer portfolio.">
+  <title>Justine Guia — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home">JG<span>.</span></a>
+    <nav class="nav" id="nav">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#activity">ACTIVITY</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="ico ico-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="ico ico-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
+      <span class="knob"></span>
+    </button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-photo">
+        <div class="avatar">
+          <img src="assets/profile.png" alt="Justine Guia"></img>
+          <span>JG</span>
+        </div>
+      </div>
+      <div class="hero-copy">
+        
+        <h1>Justine<br>Guia<span>.</span></h1>
+        <p class="hero-text">IT student at NCST with a passion for web design, front-end development, and building clean digital experiences.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#resume">GET RESUME <span>↗</span></a>
+          <a class="btn" href="mailto:your-email@example.com">EMAIL ME <span>↗</span></a>
+        </div>
+        <div class="status"><i></i> Available for learning & collaboration</div>
+      </div>
+    </section>
+
+    <div class="section-rule">01 — ABOUT / EXPERIENCE</div>
+
+    <section class="section about-grid" id="about">
+      <div>
+        <div class="panel">
+          <div class="panel-title"><span>EXPERIENCE</span><span>2024 — PRESENT</span></div>
+          <div class="timeline-item">
+            <div>
+              <h3>IT / Web Development Student</h3>
+              <p>National College of Science and Technology</p>
+            </div>
+            <span class="tag">STUDENT</span>
+          </div>
+          <div class="timeline-item">
+            <div>
+              <h3>School Web Projects</h3>
+              <p>PHP · MySQL · HTML · CSS · JavaScript</p>
+            </div>
+            <span class="tag">PROJECTS</span>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-title"><span>EDUCATION</span><span>NCST</span></div>
+          <div class="education">
+            <h3>Information Technology</h3>
+            <p>National College of Science and Technology</p>
+            <span class="muted">Web design · Programming · Database systems</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <p class="eyebrow">ABOUT</p>
+        <h2>Building things<br>with <span>purpose.</span></h2>
+        <p>I am an Information Technology student who enjoys turning ideas into functional and visually appealing websites. I like working with simple layouts, responsive interfaces, and practical systems that solve real problems.</p>
+        <p>My current focus is strengthening my front-end skills while learning more about PHP, MySQL, JavaScript, UI design, and software development.</p>
+        <div class="skill-list">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Java</span><span>Figma</span><span>Bootstrap</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-rule">02 — FEATURED PROJECTS</div>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Featured projects<span>.</span></h2>
+        </div>
+        <p class="section-note">A collection of school projects, interfaces, and systems I have worked on.</p>
+      </div>
+
+      <div class="projects">
+        <article class="project">
+          <div class="project-preview preview-enroll">
+            <img src="assets/enrollment.png" alt="Enrollment System Preview">
+            <div class="browser-bar"><b></b><b></b><b></b></div>
+            <div class="mock-layout"><div class="mock-sidebar"></div><div class="mock-content"><div></div><div></div><div></div></div></div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>01</span><span>PHP / MYSQL</span></div>
+            <h3>Senior High Enrollment System</h3>
+            <p>A responsive enrollment interface with academic year, grade level, strand selection, validation, SweetAlert feedback, and persistent form data.</p>
+            <div class="chips"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>SweetAlert</span></div>
+            <!-- <div class="project-links"><a href="#">VIEW PROJECT ↗</a><a href="#">SOURCE CODE ↗</a></div> -->
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-preview preview-hotel">
+            <img src="assets/figma.png" alt="Hotel Booking App Preview">
+            <div class="browser-bar"><b></b><b></b><b></b></div>
+            <div class="hotel-ui"><small>CHECKIN</small><strong>Find your stay.</strong><div class="hotel-cards"><i></i><i></i></div></div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>03</span><span>UI / UX DESIGN</span></div>
+            <h3>CheckIn — Hotel Booking</h3>
+            <p>A clean hotel booking app concept designed in Figma with a focused booking flow, profile screens, settings, and contact pages.</p>
+            <div class="chips"><span>Figma</span><span>UI/UX</span><span>Prototype</span></div>
+            <!-- <div class="project-links"><a href="#">CASE STUDY ↗</a><a href="#">FIGMA ↗</a></div> -->
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-preview preview-bakery">
+            <img src="assets/bakery.png" alt="Bakery Website Preview">
+            <div class="browser-bar"><b></b><b></b><b></b></div>
+            <div class="bakery-ui"><small>SWEET CRUMB</small><strong>Made for your<br>special moments.</strong><div class="cake"></div></div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>04</span><span>WEB DESIGN</span></div>
+            <h3>Bakery Website</h3>
+            <p>A bakery interface concept covering products, special orders, profile, settings, contact information, and customer-focused content.</p>
+            <div class="chips"><span>Figma</span><span>Web Design</span><span>Branding</span></div>
+            <!-- <div class="project-links"><a href="#">CASE STUDY ↗</a><a href="#">DESIGN ↗</a></div> -->
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="section-rule">03 — SKILLS</div>
+
+    <section class="section activity" id="activity">
+      <div class="bottom-grid">
+        <div class="panel">
+          <div class="panel-title"><span>TECH STACK</span><span>TOOLS I USE</span></div>
+          <div class="stack-grid">
+            <div><b>HTML / CSS</b><small>Web structure & styling</small></div>
+            <div><b>JavaScript</b><small>Interactive interfaces</small></div>
+            <div><b>PHP / MySQL</b><small>Database applications</small></div>
+            <div><b>Java</b><small>Desktop applications</small></div>
+            <div><b>Figma</b><small>UI / UX design</small></div>
+            <div><b>Git / GitHub</b><small>Version control</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-rule">04 — CONTACT</div>
+
+    <section class="section contact" id="contact">
+      <div>
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Have an idea?<br><span>Let's build it.</span></h2>
+        <p class="contact-text">I am open to learning opportunities, school collaborations, design projects, and conversations about web development.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:your-guiajustinejoshl@gmail.com"><span>EMAIL</span><b>guiajustinejoshl@gmail.com ↗</b></a>
+        <a href="https://github.com/JoshGuia" target="_blank"><span>GITHUB</span><b>github.com/JoshGuia ↗</b></a>
+        <a href="https://www.facebook.com/justinejosh.guia.1" target="_blank"><span>FACEBOOK</span><b>Justine Guia ↗</b></a>
+      </div>
+    </section>
+
+    <section class="resume section" id="resume">
+      <div class="resume-inner">
+        <p class="eyebrow">RESUME</p>
+        <h2>Download my<br><span>resume.</span></h2>
+        <a class="btn btn-primary" href="assets/GUIA.docx.pdf" download>DOWNLOAD RESUME ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> JUSTINE GUIA</span>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
